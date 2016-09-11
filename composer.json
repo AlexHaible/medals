@@ -1,0 +1,27 @@
+{
+	"name": "Gabriel/medals",
+	"type": "phpbb-extension",
+	"description": "Medals",
+	"homepage": "https://www.ninpocho.com/memberlist.php?mode=viewprofile&u=217",
+	"version": "1.0.0",
+	"time": "2016-11-09",
+	"license": "GPL-2.0",
+	"authors": [{
+			"name": "Gabriel",
+			"email": "capalex65@gmail.com",
+			"homepage": "https://www.ninpocho.com/memberlist.php?mode=viewprofile&u=217",
+			"role": "Lead Developer"
+		}],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "Medals",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.4"
+		}
+	}
+}

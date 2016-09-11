@@ -1,0 +1,45 @@
+<!-- INCLUDE overall_header.html -->
+
+<a href="{U_BACK}" style="float: {S_CONTENT_FLOW_END};">&laquo; {L_BACK}</a>
+
+<!-- IF S_FIND_USER -->
+	<h1>{L_ACP_EDIT_RANKS}</h1>
+	<form id="select_user" method="post" action="{U_ACTION}">
+		<fieldset>
+			<legend>{L_ACP_SELECT_USER}</legend>
+			<dl>
+				<dt><label for="username">{L_ENTER_USERNAME}{L_COLON}</label></dt>
+				<dd><input class="text medium" type="text" id="username" name="username" /></dd>
+				<dd>[ <a href="{U_FIND_USERNAME}" onclick="find_username(this.href); return false;">{L_FIND_USERNAME}</a> ]</dd>
+			</dl>
+
+			<p class="quick">
+				<input type="submit" name="submit-user" value="{L_SUBMIT}" class="button1" />
+			</p>
+		</fieldset>
+	</form>
+<!-- ENDIF -->
+
+<!-- IF S_EDIT_MEDALS -->
+	<h1>{ACP_MDLS_USER}</h1>
+	<form id="update_medals" name="update_medals" method="post" action="{U_ACTION}">
+		<fieldset>
+			<legend>{L_ACP_CHANGE_MEDALS}</legend>
+			<dl>
+				<dt><label for="user_medal_one">{L_ACP_MEDAL_ONE}{L_COLON}</label></dt>
+				<dd><select name="user_medal_one" id="user_medal_one">{S_MEDAL_ONE_OPTIONS}</select></dd>
+				<dt><label for="user_medal_two">{L_ACP_MEDAL_TWO}{L_COLON}</label></dt>
+				<dd><select name="user_medal_two" id="user_medal_two">{S_MEDAL_TWO_OPTIONS}</select></dd>
+				<dt><label for="user_medal_three">{L_ACP_MEDAL_THREE}{L_COLON}</label></dt>
+				<dd><select name="user_medal_three" id="user_medal_three">{S_MEDAL_THREE_OPTIONS}</select></dd>
+			</dl>
+			{S_FORM_TOKEN}
+			<input type="hidden" name="hidden_user_id" id="hidden_user_id" value="{HIDDEN_MEDAL_USER_ID}" />
+			<p class="quick">
+				<input type="submit" name="submit-rank" value="{L_SUBMIT}" class="button1" />
+			</p>
+		</fieldset>
+	</form>
+<!-- ENDIF -->
+
+<!-- INCLUDE overall_footer.html -->
