@@ -3,7 +3,7 @@
 /**
 *
 * @package phpBB Extension - Multi Ranks
-* @copyright (c) 2015 gabriel - http://www.godfathertalks.com
+* @copyright (c) 2016 Gabriel
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
@@ -33,6 +33,13 @@ class release_1_0_0 extends \phpbb\db\migration\migration
 					'medal_one'		=> array('UINT', 0, 'after' => 'user_rank_three'),
 					'medal_two'		=> array('UINT', 0, 'after' => 'user_rank_three'),
 					'medal_three'	=> array('UINT', 0, 'after' => 'user_rank_three'),
+					'medal_four'	=> array('UINT', 0, 'after' => 'user_rank_three'),
+					'medal_five'	=> array('UINT', 0, 'after' => 'user_rank_three'),
+					'medal_six'		=> array('UINT', 0, 'after' => 'user_rank_three'),
+					'medal_seven'	=> array('UINT', 0, 'after' => 'user_rank_three'),
+					'medal_eight'	=> array('UINT', 0, 'after' => 'user_rank_three'),
+					'medal_nine'	=> array('UINT', 0, 'after' => 'user_rank_three'),
+					'medal_ten'		=> array('UINT', 0, 'after' => 'user_rank_three'),
 				),
 			),
 		);
@@ -45,6 +52,13 @@ class release_1_0_0 extends \phpbb\db\migration\migration
 					'medal_one',
 					'medal_two',
 					'medal_three',
+					'medal_four',
+					'medal_five',
+					'medal_six',
+					'medal_seven',
+					'medal_eight',
+					'medal_nine',
+					'medal_ten',
 				),
 			),
 		);

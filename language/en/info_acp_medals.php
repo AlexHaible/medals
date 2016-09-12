@@ -42,4 +42,11 @@ $lang = array_merge($lang, array(
 		'ACP_MEDAL_ONE'		=> 'Medal one',
 		'ACP_MEDAL_TWO'		=> 'Medal two',
 		'ACP_MEDAL_THREE'	=> 'Medal three',
+		'ACP_MEDAL_FOUR'	=> 'Medal four',
+		'ACP_MEDAL_FIVE'	=> 'Medal five',
+		'ACP_MEDAL_SIX'		=> 'Medal six',
+		'ACP_MEDAL_SEVEN'	=> 'Medal seven',
+		'ACP_MEDAL_EIGHT'	=> 'Medal eight',
+		'ACP_MEDAL_NINE'	=> 'Medal nine',
+		'ACP_MEDAL_TEN'		=> 'Medal ten',
 ));

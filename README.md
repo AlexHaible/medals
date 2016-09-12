@@ -1,7 +1,7 @@
 # phpBB 3.1 Extension - Medals
 
 ## Description
-Allows you to give a user up to three medals!
+Allows you to give a user up to ten medals!
 
 ## Installation
 
