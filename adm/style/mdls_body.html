@@ -3,7 +3,7 @@
 <a href="{U_BACK}" style="float: {S_CONTENT_FLOW_END};">&laquo; {L_BACK}</a>
 
 <!-- IF S_FIND_USER -->
-	<h1>{L_ACP_EDIT_RANKS}</h1>
+	<h1>{L_ACP_EDIT_MEDALS}</h1>
 	<form id="select_user" method="post" action="{U_ACTION}">
 		<fieldset>
 			<legend>{L_ACP_SELECT_USER}</legend>
@@ -37,20 +37,20 @@
 				<dt><label for="user_medal_five">{L_ACP_MEDAL_FIVE}{L_COLON}</label></dt>
 				<dd><select name="user_medal_five" id="user_medal_five">{S_MEDAL_FIVE_OPTIONS}</select></dd>
 				<dt><label for="user_medal_six">{L_ACP_MEDAL_SIX}{L_COLON}</label></dt>
-				<dd><select name="user_medal_six" id="user_medal_one">{S_MEDAL_SIX_OPTIONS}</select></dd>
+				<dd><select name="user_medal_six" id="user_medal_six">{S_MEDAL_SIX_OPTIONS}</select></dd>
 				<dt><label for="user_medal_seven">{L_ACP_MEDAL_SEVEN}{L_COLON}</label></dt>
-				<dd><select name="user_medal_seven" id="user_medal_two">{S_MEDAL_SEVEN_OPTIONS}</select></dd>
+				<dd><select name="user_medal_seven" id="user_medal_seven">{S_MEDAL_SEVEN_OPTIONS}</select></dd>
 				<dt><label for="user_medal_eight">{L_ACP_MEDAL_EIGHT}{L_COLON}</label></dt>
-				<dd><select name="user_medal_eight" id="user_medal_three">{S_MEDAL_EIGHT_OPTIONS}</select></dd>
+				<dd><select name="user_medal_eight" id="user_medal_eight">{S_MEDAL_EIGHT_OPTIONS}</select></dd>
 				<dt><label for="user_medal_nine">{L_ACP_MEDAL_NINE}{L_COLON}</label></dt>
-				<dd><select name="user_medal_nine" id="user_medal_four">{S_MEDAL_NINE_OPTIONS}</select></dd>
+				<dd><select name="user_medal_nine" id="user_medal_nine">{S_MEDAL_NINE_OPTIONS}</select></dd>
 				<dt><label for="user_medal_ten">{L_ACP_MEDAL_TEN}{L_COLON}</label></dt>
-				<dd><select name="user_medal_ten" id="user_medal_five">{S_MEDAL_TEN_OPTIONS}</select></dd>
+				<dd><select name="user_medal_ten" id="user_medal_ten">{S_MEDAL_TEN_OPTIONS}</select></dd>
 			</dl>
 			{S_FORM_TOKEN}
 			<input type="hidden" name="hidden_user_id" id="hidden_user_id" value="{HIDDEN_MEDAL_USER_ID}" />
 			<p class="quick">
-				<input type="submit" name="submit-rank" value="{L_SUBMIT}" class="button1" />
+				<input type="submit" name="submit-medal" value="{L_SUBMIT}" class="button1" />
 			</p>
 		</fieldset>
 	</form>

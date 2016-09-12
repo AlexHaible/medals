@@ -27,6 +27,6 @@ class medals_module
 
 				$this->tpl_name = 'mdls_body';
 				$this->page_title = $user->lang('ACP_MDLS');
-				$admin_controller->edit_user_ranks();
+				$admin_controller->edit_medals();
 	}
 }

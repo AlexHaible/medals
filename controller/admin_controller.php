@@ -151,7 +151,7 @@ class admin_controller
 				'S_MEDAL_NINE_OPTIONS'	=> $s_medal_nine_options,
 				'S_MEDAL_TEN_OPTIONS'	=> $s_medal_ten_options,
 
-				'HIDDEN_RANK_USER_ID'	=> (int) $user['user_id'],
+				'HIDDEN_MEDAL_USER_ID'	=> (int) $user['user_id'],
 			));
 		}
 
@@ -160,16 +160,16 @@ class admin_controller
 		{
 			if (check_form_key('submit-medal-key'))
 			{
-				$medal_one = (int) $this->request->variable('medal_one', 0);
-				$medal_two = (int) $this->request->variable('medal_two', 0);
-				$medal_three = (int) $this->request->variable('medal_three', 0);
-				$medal_four = (int) $this->request->variable('medal_four', 0);
-				$medal_five = (int) $this->request->variable('medal_five', 0);
-				$medal_six = (int) $this->request->variable('medal_six', 0);
-				$medal_seven = (int) $this->request->variable('medal_seven', 0);
-				$medal_eight = (int) $this->request->variable('medal_eight', 0);
-				$medal_nine = (int) $this->request->variable('medal_nine', 0);
-				$medal_ten = (int) $this->request->variable('medal_ten', 0);
+				$medal_one = (int) $this->request->variable('user_medal_one', 0);
+				$medal_two = (int) $this->request->variable('user_medal_two', 0);
+				$medal_three = (int) $this->request->variable('user_medal_three', 0);
+				$medal_four = (int) $this->request->variable('user_medal_four', 0);
+				$medal_five = (int) $this->request->variable('user_medal_five', 0);
+				$medal_six = (int) $this->request->variable('user_medal_six', 0);
+				$medal_seven = (int) $this->request->variable('user_medal_seven', 0);
+				$medal_eight = (int) $this->request->variable('user_medal_eight', 0);
+				$medal_nine = (int) $this->request->variable('user_medal_nine', 0);
+				$medal_ten = (int) $this->request->variable('user_medal_ten', 0);
 				$upd_user_id = (int) $this->request->variable('hidden_user_id', 0);
 
 				$upd_sql = 'UPDATE ' . USERS_TABLE . '
@@ -186,7 +186,7 @@ class admin_controller
 							WHERE user_id = ' . $upd_user_id;
 				$this->db->sql_query($upd_sql);
 
-				trigger_error($this->user->lang('ACP_MDLS_SAVED') . adm_back_link($this->u_action));
+				trigger_error($this->user->lang('ACP_MDLS_SAVED') . adm_back_link($this->u_action) . '<br/>' . $medal_one . $medal_two . $medal_three . $medal_four . $medal_five . $medal_six . $medal_seven . $medal_eight . $medal_nine . $medal_ten . $upd_user_id);
 			}
 		}
 	}
